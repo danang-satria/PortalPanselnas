@@ -1,0 +1,19 @@
+# Ignore all PDF and CSV files (too large for GitHub)
+*.pdf
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+
+# Node / Next.js (Frontend)
+node_modules/
+.next/
+out/
+build/
+.env*.local
+.vercel/
+
+# OS Files
+.DS_Store
+Thumbs.db
