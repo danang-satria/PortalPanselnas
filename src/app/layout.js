@@ -12,8 +12,46 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portal CPNS PHTC 2026",
-  description: "Portal pencarian hasil kelulusan seleksi SDM KDKMP dan KNMP",
+  title: {
+    default: "Hasil Seleksi SDM KDKMP & KNMP PHTC 2026",
+    template: "%s | Portal PHTC 2026"
+  },
+  description: "Portal resmi dan tercepat pencarian hasil kelulusan seleksi SDM KDKMP dan KNMP 2026. Pantau riwayat status dari tahap CAT hingga penempatan Satdik Layer 3 secara instan.",
+  keywords: ["pengumuman CPNS", "PHTC 2026", "KDKMP", "KNMP", "hasil seleksi CAT", "lulus seleksi", "Satdik", "penempatan PHTC", "portal seleksi"],
+  authors: [{ name: "Panselnas PHTC" }],
+  creator: "Danang Satria",
+  openGraph: {
+    type: "website",
+    locale: "id_ID",
+    url: "https://portalpanselnas.vercel.app", // Adjust if actual Vercel URL is different
+    title: "Portal Kelulusan SDM KDKMP & KNMP PHTC 2026",
+    description: "Cari nomor peserta atau nama Anda untuk mengetahui status kelulusan akhir KDKMP & KNMP secara real-time dari CAT hingga Layer 3.",
+    siteName: "Portal PHTC 2026",
+    images: [
+      {
+        url: "/og-image.png", // Next.js standard or fallback
+        width: 1200,
+        height: 630,
+        alt: "Portal Kelulusan PHTC 2026"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hasil Seleksi SDM KDKMP & KNMP PHTC 2026",
+    description: "Pantau kelulusan PHTC Anda secara instan dari awal hingga akhir!"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
