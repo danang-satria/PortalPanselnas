@@ -227,7 +227,7 @@ def build_sqlite_db():
     CSV_LAYER1 = os.path.join(BASE_DIR, "pengumuman phtc skt 2026 layer 1.csv")
     CSV_LAYER2 = os.path.join(BASE_DIR, "pengumuman phtc skt 2026 layer 2 (fixed).csv")
     CSV_LAYER3 = os.path.join(BASE_DIR, "pengumuman phtc skt 2026 layer 3 (fixed).csv")
-    DB_PATH = os.path.join(BASE_DIR, "frontend", "database.db")
+    DB_PATH = os.path.join(BASE_DIR, "database.db")
 
     df_cat = load_safe(CSV_CAT)
     df_knmp = load_safe(CSV_KNMP)
