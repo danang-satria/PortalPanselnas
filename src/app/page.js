@@ -318,10 +318,12 @@ export default function Home() {
               <div className="absolute right-0 top-0 w-64 h-64 bg-red-600/5 blur-[100px] rounded-full group-hover:bg-red-600/10 transition-colors"></div>
               <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                 <div>
-                  <h3 className="text-red-400 font-bold mb-2 flex items-center">
-                    <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Statistik Kegagalan (Lulus Tes Tapi Gugur Formasi)
-                  </h3>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-red-500/10 rounded-xl flex items-center justify-center border border-red-500/20 shrink-0">
+                      <svg className="w-5 h-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 className="text-[11px] font-bold text-red-400 uppercase tracking-widest leading-snug">Statistik Kegagalan (Gugur Formasi)</h3>
+                  </div>
                   <p className="text-neutral-400 text-sm max-w-xl mb-4 leading-relaxed">
                     Peserta yang sebelumnya telah lulus <i>passing grade</i> (P/L, P1/L, P2/L) pada tes CAT, namun <strong>tersingkir di seleksi akhir</strong> karena kalah ranking ataupun dinyatakan Tidak Memenuhi Syarat (TMS) sehingga tidak masuk dalam daftar formasi utama (L) maupun pengganti (MS).
                   </p>
@@ -357,10 +359,12 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="bg-neutral-900/30 border border-neutral-800 rounded-3xl p-8"
             >
-              <h3 className="text-amber-500 font-bold mb-6 flex items-center">
-                <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
-                Dinamika Pengunduran Diri (Transisi Layer)
-              </h3>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-amber-500/10 rounded-xl flex items-center justify-center border border-amber-500/20 shrink-0">
+                  <svg className="w-5 h-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
+                </div>
+                <h3 className="text-[11px] font-bold text-amber-500 uppercase tracking-widest leading-snug">Dinamika Pengunduran Diri (Transisi Layer)</h3>
+              </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-[#0a0a0a] border border-neutral-800 rounded-2xl p-5 hover:border-amber-500/30 transition-colors">
