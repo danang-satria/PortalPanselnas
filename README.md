@@ -37,21 +37,6 @@ npm run dev
 
 Buka `http://localhost:3000` di peramban (browser) Anda untuk melihat portal ini beraksi!
 
-## 🧰 Toolkit Python (Ekstraktor PDF)
-
-Jika Anda ingin mengekstrak data dari pengumuman PDF resmi Panselnas atau membangun ulang file `database.db`, Anda dapat menggunakan alat Python serbaguna yang sudah disediakan.
-
-Pastikan Anda memiliki *Library* Python yang dibutuhkan:
-```bash
-pip install pandas pymupdf
-```
-
-Lalu jalankan alat *Command Line* (CLI):
-```bash
-python panselnas.py
-```
-Anda akan disajikan dengan menu otomatis untuk melakukan seluruh sinkronisasi *database*.
-
 ## 🚀 Panduan Deploy (Vercel)
 
 Proyek ini telah direkayasa secara khusus agar dapat berjalan di atas server *Vercel* secara gratis, meskipun *Vercel* tidak memberikan fitur *"Write"* pada *database* di sistem serverless mereka.

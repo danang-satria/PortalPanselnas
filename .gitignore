@@ -17,3 +17,6 @@ build/
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Private Tools
+panselnas.py
