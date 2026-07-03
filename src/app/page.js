@@ -96,7 +96,7 @@ export default function Home() {
               <button 
                 type="submit"
                 disabled={loading}
-                className="bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-3 px-6 md:px-8 rounded-full transition-all shadow-lg hover:shadow-indigo-500/50 disabled:opacity-50 whitespace-nowrap"
+                className="bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-3 px-5 sm:px-8 rounded-full transition-all shadow-lg hover:shadow-indigo-500/50 disabled:opacity-50 whitespace-nowrap text-sm sm:text-base"
               >
                 {loading ? "Mencari..." : "Cari Data"}
               </button>
@@ -266,14 +266,14 @@ export default function Home() {
                     </div>
                     <h3 className="text-[11px] font-bold text-emerald-400 uppercase tracking-widest leading-snug">Hasil Seleksi Kompetensi Tambahan</h3>
                   </div>
-                  <div className="flex gap-8 mb-6">
+                  <div className="flex gap-4 sm:gap-8 mb-6">
                     <div>
                       <div className="text-4xl font-black text-white mb-1">{stats.lolos_strictly_l_count?.toLocaleString() || 0}</div>
-                      <p className="text-xs font-bold text-emerald-400 uppercase tracking-wider">Lolos Formasi Utama (L)</p>
+                      <p className="text-[10px] sm:text-xs font-bold text-emerald-400 uppercase tracking-wider">Lolos Formasi Utama (L)</p>
                     </div>
-                    <div className="border-l border-emerald-900/30 pl-8">
+                    <div className="border-l border-emerald-900/30 pl-4 sm:pl-8">
                       <div className="text-4xl font-black text-white mb-1">{stats.lolos_strictly_ms_count?.toLocaleString() || 0}</div>
-                      <p className="text-xs font-bold text-teal-400 uppercase tracking-wider">Peserta Pengganti (MS)</p>
+                      <p className="text-[10px] sm:text-xs font-bold text-teal-400 uppercase tracking-wider">Peserta Pengganti (MS)</p>
                     </div>
                   </div>
                   
@@ -345,7 +345,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="text-right">
+                <div className="text-left md:text-right mt-4 md:mt-0 pt-4 md:pt-0 border-t border-red-900/30 md:border-none w-full md:w-auto">
                   <div className="text-6xl font-black text-white">{stats.cat_all_pl_tidak_lolos?.toLocaleString() || stats.cat_pl_tidak_lolos?.toLocaleString()}</div>
                   <p className="text-sm font-semibold text-red-500 mt-2">Total Peserta Gugur</p>
                 </div>
